@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if ! [ -x "$(command -v node)" ]; then
+  echo 'Error: node is not installed.' >&2
+  exit 1
+fi
+
+node highlights.js $1 $2
